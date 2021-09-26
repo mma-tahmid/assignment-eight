@@ -19,7 +19,7 @@ const Student = (props) => {
                 <p> name: {name}</p>
             </div> */}
 
-
+            {/* create single student cart */}
 
             <div className="row row-cols-2 row-cols-md-2 g-2">
                 <div className="col ">
@@ -36,7 +36,7 @@ const Student = (props) => {
                             <h6> <small> Address: {address} </small></h6>
                             <h6> <small> Reg. Fee: ${fee}</small></h6>
 
-
+                            {/* create button */}
 
                             <button onClick={() => props.handleAddToCart(props.student)} className="btn-button"> {element} Add To Cart</button>
 

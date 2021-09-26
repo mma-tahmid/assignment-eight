@@ -5,6 +5,8 @@ import "./Fullteam.css"
 
 const Fullteam = () => {
 
+    //use usestate and use effect
+
     const [students, setStudents] = useState([]);
 
     const [calculate, setCalculate] = useState([]);
@@ -20,7 +22,7 @@ const Fullteam = () => {
         setCalculate(newStudent);
     }
 
-    //d-flex
+
     return (
         <div className="full-layout-conatiner mt-4">
             <div className="students-container">
