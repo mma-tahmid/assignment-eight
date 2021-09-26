@@ -1,0 +1,15 @@
+.img-size{
+   
+   clip-path: circle();
+   margin-top: 5px;
+}
+
+.btn-button{
+
+margin-top: 5px;
+ margin-left: 27px;
+ cursor: pointer;
+ background-color: yellowgreen;
+
+ 
+}
