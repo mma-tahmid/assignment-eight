@@ -1,6 +1,13 @@
 import React from 'react';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+import { faUser } from '@fortawesome/free-solid-svg-icons'
+
+import "./Calculate.css"
 const Calculate = (props) => {
+
+    const element = <FontAwesomeIcon icon={faUser} />
 
     const { calculate } = props;
 
@@ -12,9 +19,9 @@ const Calculate = (props) => {
     }
 
     return (
-        <div>
-            <h5> Students Added:{props.calculate.length}</h5>
-            <p> Total: ${total} </p>
+        <div className="cart-class w-75">
+            <h6 className="text-decoration"> {element} Students Added: {props.calculate.length}</h6>
+            <h6 className="text-decoration p-2"> Total Reg. Fees: ${total} </h6>
 
         </div>
     );

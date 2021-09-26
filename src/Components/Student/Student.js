@@ -5,7 +5,7 @@ import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 import "./Student.css"
 const Student = (props) => {
 
-    const { name, picture, email, gender, address, fee, age } = props.student
+    const { name, picture, email, gender, address, fee, age, department } = props.student
 
 
     const element = <FontAwesomeIcon icon={faShoppingCart} />
@@ -23,17 +23,18 @@ const Student = (props) => {
 
             <div className="row row-cols-2 row-cols-md-2 g-2">
                 <div className="col ">
-                    <div className="card">
+                    <div className="card bg-light">
                         <img src={picture} className="card-img-top img-size" alt="..." />
 
                         <div className="card-body">
 
                             <h6 className="card-title"> Name: {name} </h6>
                             <h6> <small> Email: {email} </small>  </h6>
+                            <h6> <small> Department: {department} </small>  </h6>
                             <h6> <small> Gender: {gender}</small></h6>
                             <h6> <small> Age: {age} </small></h6>
                             <h6> <small> Address: {address} </small></h6>
-                            <h6> <small> Reg. Fees: {fee}</small></h6>
+                            <h6> <small> Reg. Fee: ${fee}</small></h6>
 
 
 
